@@ -2,14 +2,14 @@ name: Build Test and push
 on: [push]
 env:
   IMAGE_NAME: student_service
-  REPO_NAME: li54
+  REPO_NAME: alexa5799
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-        
+
     - name: Build docker
       run: |
         docker build -t ${{ env.REPO_NAME }}/${{ env.IMAGE_NAME }} ./python-flask-server-generated
