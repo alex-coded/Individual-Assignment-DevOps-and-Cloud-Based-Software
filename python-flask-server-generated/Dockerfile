@@ -7,7 +7,6 @@ COPY requirements.txt /usr/src/app/
 COPY setup.py /user/src/app
 
 RUN pip3 install --no-cache-dir -r requirements.txt
-# RUN python3 setup.py install
 
 COPY . /usr/src/app
 
